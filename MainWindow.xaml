@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:PartialTransposition"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#FF333337">
+        <Button x:Name="ButtonLoadAUDIO" Content="Load WAV" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Foreground="White" RenderTransformOrigin="0.5,0.5" Click="LoadAUDIO" Background="#FF333337" Cursor="Hand"/>
+        <Label x:Name="LabelFilename" Content="No file loaded..." HorizontalAlignment="Left" Margin="90,7,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Slider x:Name="SliderAudio" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Width="772" Foreground="#FF8F8F8F" BorderBrush="#FF8F8F8F"/>
+        <Button x:Name="ButtonPlay" Content="PLAY" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="75" Background="#FF333337" Foreground="White" RenderTransformOrigin="0.5,0.5" Click="ButtonAudioPlayState"/>
+        <Label x:Name="LabelAudioTime" Content="No file loaded..." HorizontalAlignment="Left" Margin="90,58,0,0" VerticalAlignment="Top" Foreground="White"/>
+
     </Grid>
 </Window>
